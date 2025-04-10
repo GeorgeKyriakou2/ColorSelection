@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Selection</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+<h1>Please select the colour that you like the most</h1>
+
+<div class="colorContainer">
+
+    <div class="color">
+        <h2>Dark Olive</h2>
+        <img src="Dark_Olive_Green_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Golden Rod</h2>
+        <img src="Goldenrod_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Dodger Blue</h2>
+        <img src="Dodger_Blue_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Peru</h2>
+        <img src="Peru_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Crimson</h2>
+        <img src="Crimson_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Chocolate</h2>
+        <img src="Chocolate_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Rosy Brown</h2>
+        <img src="Rosy_Brown_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Sea Green</h2>
+        <img src="Sea_Green_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Teal</h2>
+        <img src="Teal_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Silver</h2>
+        <img src="Silver_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Rose Gold</h2>
+        <img src="Rose_Gold_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Orchid</h2>
+        <img src="Orchid_plain.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Lavender Smoke</h2>
+        <img src="Lavender_Smoke.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Sea Foam Whisper</h2>
+        <img src="Seafoam_Whisper.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Tropical Teal</h2>
+        <img src="Tropical_Teal.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Electric Magenta</h2>
+        <img src="Electric_Magenta.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Forest Night</h2>
+        <img src="Forest_Night.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Cherry Blaze</h2>
+        <img src="Cherry_Blaze.png" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+<script>
+    const buttons = document.getElementsByClassName('button');
+
+    for (let i =0; i < buttons.length; i++){
+        buttons[i].addEventListener('click', function (){
+            const ColorName = this.parentElement.querySelector('h2').textContent;
+            if (confirm("You have selected: " + ColorName + ". Is this your choice?")){
+                alert("You have selected: " + ColorName);
+                window.location.href="https://docs.google.com/forms/d/e/1FAIpQLSeMFBjGnKeZcQbwgTmwj29zPqsD0mR1Y5MTvfB43VjGZawBhQ/viewform?usp=preview";
+            }
+        })
+    }
+</script>
+
+</body>
+</html>

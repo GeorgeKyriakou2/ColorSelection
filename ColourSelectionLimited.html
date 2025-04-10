@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Selection</title>
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+<body>
+<h1>Please select the colour that you like the most</h1>
+
+<div class="colorContainer">
+
+    <div class="color">
+        <h2>Blue</h2>
+        <img src="blue.jpg" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Red</h2>
+        <img src="red.jpg" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Yellow</h2>
+        <img src="yellow.jpg" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Green</h2>
+        <img src="green.jpg" alt="blue">
+        <button class="button">Select this colour?</button>
+    </div>
+
+    <div class="color">
+        <h2>Black</h2>
+        <img src="black.jpg" alt="blue" >
+        <button class="button">Select this colour?</button>
+    </div>
+</div>
+
+<script>
+    const buttons = document.getElementsByClassName('button');
+
+    for (let i =0; i < buttons.length; i++){
+        buttons[i].addEventListener('click', function (){
+            const ColorName = this.parentElement.querySelector('h2').textContent;
+            if (confirm("You have selected: " + ColorName + ". Is this your choice?")){
+                window.location.href="ColourSelectionExpanded.html";
+                alert("You have selected: " + ColorName);
+            }
+        })
+    }
+</script>
+</body>
+</html>

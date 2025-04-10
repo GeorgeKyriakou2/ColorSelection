@@ -1,0 +1,29 @@
+h1{
+    justify-self: center;
+    background: white;
+    border: 2px solid black;
+}
+body{
+    background-color: grey;
+}
+
+.color{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+}
+.color img{
+    width:120px;
+    height:120px;
+}
+.colorContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
